@@ -1,0 +1,86 @@
+/* Write your CSS here */
+.comment-top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  min-height: 100vh;
+}
+.comment-main-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: darkblue;
+}
+.comment-card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+}
+.card-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  color: black;
+}
+.comment-image {
+  width: 100%;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-name {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.user-comment {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.add-button {
+  align-self: flex-start;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .comment-main-heading {
+    font-size: 40px;
+    align-self: flex-start;
+  }
+  .comment-top-section {
+    padding: 10px;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .comment-card-container {
+    order: 1;
+    margin-right: -20px;
+    width: 600px;
+  }
+  .comment-image {
+    order: 2;
+    width: 400px;
+    height: 300px;
+    margin-right: 100px;
+  }
+}
